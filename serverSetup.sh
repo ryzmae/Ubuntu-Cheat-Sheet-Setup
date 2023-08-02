@@ -227,10 +227,9 @@ select lng in Yes No
 do
     case $lng in
         "Yes")
-            git clone https://github.com/ryzmae/docker-compose.yml;;
-            git clone https://github.com/ryzmae/application.yml;;
+            git clone https://github.com/ryzmae/docker-compose.yml && git clone https://github.com/ryzmae/application.yml;;
             docker-compose up -d;;
-            echo "ryzmSetup || Installed Lavalink";;
+            echo "ryzmSetup || Installed & Started Lavalink";;
             break;;
         "No")
             echo "ryzmSetup || Skipping git";;
